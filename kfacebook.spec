@@ -10,8 +10,10 @@ Group:         Graphical desktop/KDE
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 Source0:       %{name}-%version.%svn.tar.bz2
 BuildRequires: kde4-macros
-BuildRequires: libmsn-devel
-
+BuildRequires: kdelibs4-devel
+BuildRequires: kdebase4-workspace-devel
+BuildRequires: kdepim4-devel
+BuildRequires: boost-devel
 %description
 Kfacebook
 
