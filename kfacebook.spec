@@ -1,9 +1,9 @@
 %define svn   864766
 
 Name:          kfacebook
-Summary:       kfacebook
+Summary:       Plasma applet aimed to show your facebook friends with their status
 Version:       1.0
-Release:       %mkrel 0.%svn.1
+Release:       %mkrel 0.%svn.2
 Url:           http://websvn.kde.org/trunk/playground/pim/kfacebook/
 License:       GPLv2+
 Group:         Graphical desktop/KDE
@@ -15,7 +15,7 @@ BuildRequires: kdebase4-workspace-devel
 BuildRequires: kdepim4-devel
 BuildRequires: boost-devel
 %description
-Kfacebook
+Plasma applet aimed to show your facebook friends with their status
 
 #---------------------------------------------
 
@@ -36,7 +36,7 @@ Group: System/Libraries
 #-----------------------------------------------------------------------------
 
 %package -n plasma-applet-facebook
-Summary: Plasma facebook applets
+Summary:   Plasma applet aimed to show your facebook friends with their status
 Group: Graphical desktop/KDE
 Requires: kdebase4-workspace
 Provides: plasma-applet
@@ -44,7 +44,7 @@ Requires: plasma-engine-facebook = %version
 Conflicts: extragear-plasma < 4.0.82
 
 %description -n plasma-applet-facebook
-Plasma facebook applets.
+Plasma applet aimed to show your facebook friends with their status
 
 %files -n plasma-applet-facebook
 %defattr(-,root,root)
