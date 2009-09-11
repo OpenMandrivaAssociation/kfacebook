@@ -3,7 +3,7 @@
 Name:          kfacebook
 Summary:       Plasma applet aimed to show your facebook friends with their status
 Version:       1.0
-Release:       %mkrel 0.%svn.3
+Release:       %mkrel 0.%svn.4
 Url:           http://websvn.kde.org/trunk/playground/pim/kfacebook/
 License:       GPLv2+
 Group:         Graphical desktop/KDE
