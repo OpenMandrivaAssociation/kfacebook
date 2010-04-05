@@ -1,15 +1,14 @@
-%define svn   864766
+%define svn   1102486
 
 Name:          kfacebook
 Summary:       Plasma applet aimed to show your facebook friends with their status
 Version:       1.0
-Release:       %mkrel 0.%svn.4
+Release:       %mkrel 0.%svn.1
 Url:           http://websvn.kde.org/trunk/playground/pim/kfacebook/
 License:       GPLv2+
 Group:         Graphical desktop/KDE
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 Source0:       %{name}-%version.%svn.tar.bz2
-Patch0:        kfacebook-1.0-fix-cmake.patch
 BuildRequires: kde4-macros
 BuildRequires: kdelibs4-devel
 BuildRequires: kdebase4-workspace-devel
@@ -92,7 +91,6 @@ Files needed to build applications based on %{name}.
 
 %prep
 %setup -q  -n %name
-%patch0 -p1 
 
 %build
 %cmake_kde4
